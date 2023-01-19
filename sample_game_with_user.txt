@@ -1,0 +1,417 @@
+Start game:
+  X   X   X   X  SP2  X
+  X   X   X   X   X   X
+  X   X   X   X   X   X
+  X   X   X   X   X   X
+  X   X   X   X   X   X
+  X  SP1  X   X   X   X
+
+Enter your move: spawn DS northwest
+  X   X   X   X  SP2  X 
+  X   X   X   X   X   X
+  X   X   X   X   X   X
+  X   X   X   X   X   X
+ DS1  X   X   X   X   X
+  X  SP1  X   X   X   X
+
+Bot plays: move SP west
+  X   X   X  SP2  X   X
+  X   X   X   X   X   X
+  X   X   X   X   X   X
+  X   X   X   X   X   X
+ DS1  X   X   X   X   X
+  X  SP1  X   X   X   X
+
+Enter your move: spawn SW northeast
+  X   X   X  SP2  X   X 
+  X   X   X   X   X   X
+  X   X   X   X   X   X
+  X   X   X   X   X   X
+ DS1  X  SW1  X   X   X
+  X  SP1  X   X   X   X
+
+Bot plays: spawn FL northwest
+  X   X   X  SP2  X   X
+  X   X   X   X   X   X
+  X   X   X   X   X   X
+  X   X   X   X   X   X
+ DS1  X  SW1  X   X   X
+  X  SP1 FL2  X   X   X
+
+Enter your move: spawn JP west
+  X   X   X  SP2  X   X 
+  X   X   X   X   X   X
+  X   X   X   X   X   X
+  X   X   X   X   X   X
+ DS1  X  SW1  X   X   X
+ JP1 SP1 FL2  X   X   X
+
+Bot plays: spawn JP north
+  X   X   X  SP2  X   X
+  X   X   X   X   X   X
+  X   X   X   X   X   X
+  X   X   X   X   X   X
+ DS1  X  SW1  X   X   X
+ JP1 SP1 FL2 JP2  X   X
+
+Enter your move: move SP south
+  X  SP1  X  SP2  X   X 
+  X   X   X   X   X   X
+  X   X   X   X   X   X
+  X   X   X   X   X   X
+ DS1  X  SW1  X   X   X
+ JP1  X  FL2 JP2  X   X
+
+Bot plays: spawn DS northeast
+  X  SP1  X  SP2  X   X
+  X   X   X   X   X   X
+  X   X   X   X   X   X
+  X   X   X   X   X   X
+ DS1  X  SW1  X   X   X
+ JP1  X  FL2 JP2 DS2  X
+
+Enter your move: spawn FL east
+  X  SP1 FL1 SP2  X   X 
+  X   X   X   X   X   X
+  X   X   X   X   X   X
+  X   X   X   X   X   X
+ DS1  X  SW1  X   X   X
+ JP1  X  FL2 JP2 DS2  X
+
+Bot plays: move SP south
+  X  SP1 FL1  X   X   X
+  X   X   X  SP2  X   X
+  X   X   X   X   X   X
+  X   X   X   X   X   X
+ DS1  X  SW1  X   X   X
+ JP1  X  FL2 JP2 DS2  X
+
+Enter your move: spawn CC southeast
+  X  SP1 FL1  X   X   X 
+  X   X  CC1 SP2  X   X
+  X   X   X   X   X   X
+  X   X   X   X   X   X
+ DS1  X  SW1  X   X   X
+ JP1  X  FL2 JP2 DS2  X
+
+Bot plays: move SP south
+  X  SP1 FL1  X   X   X
+  X   X  CC1  X   X   X
+  X   X   X  SP2  X   X
+  X   X   X   X   X   X
+ DS1  X  SW1  X   X   X
+ JP1  X  FL2 JP2 DS2  X
+
+Enter your move: move FL northeast
+  X  SP1  X   X   X   X 
+  X   X  CC1  X   X   X
+  X   X   X  SP2  X   X
+  X   X   X   X   X   X
+ DS1  X  SW1  X  FL1  X
+ JP1  X  FL2  X  DS2  X
+
+Bot plays: spawn CH north
+  X  SP1  X   X   X   X
+  X   X  CC1 CH2  X   X
+  X   X   X  SP2  X   X
+  X   X   X   X   X   X
+ DS1  X  SW1  X  FL1  X
+ JP1  X  FL2  X  DS2  X
+
+Enter your move: move FL northwest 
+  X  SP1  X   X   X   X 
+  X   X  CC1 CH2  X   X
+  X   X  FL1 SP2  X   X
+  X   X   X   X   X   X
+ DS1  X  SW1  X   X   X
+ JP1  X  FL2  X  DS2  X
+
+Bot plays: move SP southeast
+  X  SP1  X   X   X   X
+  X   X  CC1 CH2  X   X
+  X   X  FL1  X   X   X
+  X   X   X   X  SP2  X
+ DS1  X  SW1  X   X   X
+ JP1  X  FL2  X  DS2  X
+
+Enter your move: move CC east
+  X  SP1  X   X   X   X 
+ CC1  X   X   X   X   X
+  X   X  FL1  X   X   X
+  X   X   X   X  SP2  X
+ DS1  X  SW1  X   X   X
+ JP1  X  FL2  X  DS2  X
+
+Bot plays: spawn CC northwest
+  X  SP1  X   X   X   X
+ CC1  X   X   X   X   X
+  X   X  FL1 CC2  X   X
+  X   X   X   X  SP2  X
+ DS1  X  SW1  X   X   X
+ JP1  X  FL2  X  DS2  X
+
+Enter your move: move FL east
+  X  SP1  X   X   X   X 
+ CC1  X   X   X   X   X
+  X   X   X   X  FL1  X
+  X   X   X   X  SP2  X
+ DS1  X  SW1  X   X   X
+ JP1  X  FL2  X  DS2  X
+
+Bot plays: spawn SW northwest
+  X  SP1  X   X   X   X
+ CC1  X   X   X   X   X
+  X   X   X  SW2 FL1  X
+  X   X   X   X  SP2  X
+ DS1  X  SW1  X   X   X
+ JP1  X  FL2  X  DS2  X
+
+Enter your move: move FL west
+  X  SP1  X   X   X   X 
+ CC1  X   X   X   X   X
+  X   X  FL1  X   X   X
+  X   X   X   X  SP2  X
+ DS1  X  SW1  X   X   X
+ JP1  X  FL2  X  DS2  X
+
+Bot plays: spawn JP northwest
+  X  SP1  X   X   X   X
+ CC1  X   X   X   X   X
+  X   X  FL1 JP2  X   X
+  X   X   X   X  SP2  X
+ DS1  X  SW1  X   X   X
+ JP1  X  FL2  X  DS2  X
+
+Enter your move: move FL east
+  X  SP1  X   X   X   X 
+ CC1  X   X   X   X   X
+  X   X   X   X  FL1  X
+  X   X   X   X  SP2  X
+ DS1  X  SW1  X   X   X
+ JP1  X  FL2  X  DS2  X
+
+Bot plays: spawn LS northwest
+  X  SP1  X   X   X   X
+ CC1  X   X   X   X   X
+  X   X   X  LS2 FL1  X
+  X   X   X   X  SP2  X
+ DS1  X  SW1  X   X   X
+ JP1  X  FL2  X  DS2  X
+
+Enter your move: move FL west 
+  X  SP1  X   X   X   X 
+ CC1  X   X   X   X   X
+  X   X  FL1  X   X   X
+  X   X   X   X  SP2  X
+ DS1  X  SW1  X   X   X
+ JP1  X  FL2  X  DS2  X
+
+Bot plays: spawn CH northwest
+  X  SP1  X   X   X   X
+ CC1  X   X   X   X   X
+  X   X  FL1 CH2  X   X
+  X   X   X   X  SP2  X
+ DS1  X  SW1  X   X   X
+ JP1  X  FL2  X  DS2  X
+
+Enter your move: move FL east 
+  X  SP1  X   X   X   X 
+ CC1  X   X   X   X   X
+  X   X   X   X  FL1  X
+  X   X   X   X  SP2  X
+ DS1  X  SW1  X   X   X
+ JP1  X  FL2  X  DS2  X
+
+Bot plays: spawn CC northwest
+  X  SP1  X   X   X   X
+ CC1  X   X   X   X   X
+  X   X   X  CC2 FL1  X
+  X   X   X   X  SP2  X
+ DS1  X  SW1  X   X   X
+ JP1  X  FL2  X  DS2  X
+
+Enter your move: move FL west      
+  X  SP1  X   X   X   X 
+ CC1  X   X   X   X   X
+  X   X  FL1  X   X   X
+  X   X   X   X  SP2  X
+ DS1  X  SW1  X   X   X
+ JP1  X  FL2  X  DS2  X
+
+Bot plays: spawn SW northwest
+  X  SP1  X   X   X   X
+ CC1  X   X   X   X   X
+  X   X  FL1 SW2  X   X
+  X   X   X   X  SP2  X
+ DS1  X  SW1  X   X   X
+ JP1  X  FL2  X  DS2  X
+
+Enter your move: move FL east 
+  X  SP1  X   X   X   X 
+ CC1  X   X   X   X   X
+  X   X   X   X  FL1  X
+  X   X   X   X  SP2  X
+ DS1  X  SW1  X   X   X
+ JP1  X  FL2  X  DS2  X
+
+Bot plays: spawn JP northwest
+  X  SP1  X   X   X   X
+ CC1  X   X   X   X   X
+  X   X   X  JP2 FL1  X
+  X   X   X   X  SP2  X
+ DS1  X  SW1  X   X   X
+ JP1  X  FL2  X  DS2  X
+
+Enter your move: move FL east 
+  X  SP1  X   X   X   X 
+ CC1  X   X   X   X   X
+ FL1  X   X  JP2  X   X
+  X   X   X   X  SP2  X
+ DS1  X  SW1  X   X   X
+ JP1  X  FL2  X  DS2  X
+
+Bot plays: spawn LS north
+  X  SP1  X   X   X   X
+ CC1  X   X   X   X   X
+ FL1  X   X  JP2 LS2  X
+  X   X   X   X  SP2  X
+ DS1  X  SW1  X   X   X
+ JP1  X  FL2  X  DS2  X
+
+Enter your move: move JP east
+  X  SP1  X   X   X   X 
+ CC1  X   X   X   X   X
+ FL1  X   X  JP2 LS2  X
+  X   X   X   X  SP2  X
+ DS1  X  SW1  X   X   X
+  X   X   X  JP1 DS2  X
+
+Bot plays: spawn CH northeast
+  X  SP1  X   X   X   X
+ CC1  X   X   X   X   X
+ FL1  X   X  JP2 LS2 CH2
+  X   X   X   X  SP2  X
+ DS1  X  SW1  X   X   X
+  X   X   X  JP1 DS2  X
+
+Enter your move: spawn FL east
+Invalid move, please make another move.
+Enter your move: move FL east  
+  X  SP1  X   X   X   X 
+ CC1  X   X   X   X   X
+  X   X  FL1 JP2 LS2 CH2
+  X   X   X   X  SP2  X
+ DS1  X  SW1  X   X   X
+  X   X   X  JP1 DS2  X
+
+Bot plays: spawn CC west
+  X  SP1  X   X   X   X
+ CC1  X   X   X   X   X
+  X   X  FL1 JP2 LS2 CH2
+  X   X   X  CC2 SP2  X
+ DS1  X  SW1  X   X   X
+  X   X   X  JP1 DS2  X
+
+Enter your move: move swinger northeast
+Invalid move, please make another move.
+Enter your move: move swinger southeast
+Invalid move, please make another move.
+Enter your move: move CC north         
+ CC1 SP1  X   X   X   X 
+  X   X   X   X   X   X
+  X   X  FL1 JP2 LS2 CH2
+  X   X   X  CC2 SP2  X
+ DS1  X  SW1  X   X   X
+  X   X   X  JP1 DS2  X
+
+Bot plays: spawn SW east
+ CC1 SP1  X   X   X   X
+  X   X   X   X   X   X
+  X   X  FL1 JP2 LS2 CH2
+  X   X   X  CC2 SP2 SW2
+ DS1  X  SW1  X   X   X
+  X   X   X  JP1 DS2  X
+
+Enter your move: move CC north
+  X  SP1  X   X   X   X 
+  X   X   X   X   X   X
+  X   X  FL1 JP2 LS2 CH2
+  X   X   X  CC2 SP2 SW2
+ DS1  X  SW1  X   X   X
+ CC1  X   X  JP1 DS2  X
+
+Bot plays: spawn RS southwest
+  X  SP1  X   X   X   X
+  X   X   X   X   X   X
+  X   X  FL1 JP2 LS2 CH2
+  X   X   X  CC2 SP2 SW2
+ DS1  X  SW1 RS2  X   X
+ CC1  X   X  JP1 DS2  X
+
+Enter your move: spawn JP east
+Invalid move, please make another move.
+Enter your move: move CC west 
+  X  SP1  X   X   X   X 
+  X   X   X   X   X   X
+  X   X  FL1 JP2 LS2 CH2
+  X   X   X  CC2 SP2 SW2
+ DS1  X  SW1 RS2  X   X
+  X   X  CC1 JP1  X   X
+
+Bot plays: spawn FL south
+  X  SP1  X   X   X   X
+  X   X   X   X   X   X
+  X   X  FL1 JP2 LS2 CH2
+  X   X   X  CC2 SP2 SW2
+ DS1  X  SW1 RS2 FL2  X
+  X   X  CC1 JP1  X   X
+
+Enter your move: move DS northwest
+  X  SP1  X   X   X   X 
+  X   X   X  DS1  X   X
+  X   X  FL1 JP2  X  CH2
+  X   X   X  CC2 SP2  X
+  X   X  SW1 RS2 FL2  X
+  X   X  CC1 JP1  X   X
+
+Bot plays: move FL north
+  X  SP1  X   X   X   X
+  X   X   X  DS1  X   X
+  X   X  FL1 JP2 FL2 CH2
+  X   X   X  CC2 SP2  X
+  X   X  SW1 RS2  X   X
+  X   X  CC1 JP1  X   X
+
+Enter your move: move DS southwest
+  X  SP1  X   X   X   X 
+  X   X   X   X   X   X
+  X   X  FL1 JP2 FL2 CH2
+  X   X   X  CC2 SP2  X
+ DS1  X  SW1 RS2  X   X
+  X   X  CC1 JP1  X   X
+
+Bot plays: move FL northwest
+  X  SP1 FL2  X   X   X 
+  X   X   X   X   X   X
+  X   X  FL1 JP2  X  CH2
+  X   X   X  CC2 SP2  X
+ DS1  X  SW1 RS2  X   X
+  X   X  CC1 JP1  X   X
+
+Enter your move: move FL east
+  X  SP1 FL2  X   X   X 
+  X   X   X   X   X   X
+  X   X   X   X  FL1 CH2
+  X   X   X  CC2 SP2  X
+ DS1  X  SW1 RS2  X   X
+  X   X  CC1 JP1  X   X
+
+Bot plays: move FL west
+ FL2  X   X   X   X   X
+  X   X   X   X   X   X
+  X   X   X   X  FL1 CH2
+  X   X   X  CC2 SP2  X
+ DS1  X  SW1 RS2  X   X
+  X   X  CC1 JP1  X   X
+
+Sorry, you lose :(

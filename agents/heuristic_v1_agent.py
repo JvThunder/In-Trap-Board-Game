@@ -1,27 +1,31 @@
 def HeuristicAgent(env):
-
+    '''
+    The best agent so far. It evaluates certain heuristics valuing the pieces on the board 
+    and also whether the king is under attacked or not.
+    '''
+    
+    import copy
+    
     def find_valid_moves(curr_env):
         possible_moves = []
         
         # mtype = 1
         for piece in curr_env.pieces:
-            if piece == None:
-                continue
-            if piece['position'] == (-1,-1):
-                for direction in curr_env.direction_list:
-                    id = piece['id']
-                    if curr_env.check_move(1, id, direction):
-                        possible_moves.append((1, id, direction))
+            if piece:
+                if piece['position'] == (-1,-1):
+                    for direction in curr_env.direction_list:
+                        id = piece['id']
+                        if curr_env.check_move(1, id, direction):
+                            possible_moves.append((1, id, direction))
         
         # mtype = 2
         for piece in curr_env.pieces:
-            if piece == None:
-                continue
-            id = piece['id']
-            if piece['color'] == curr_env.player_turn:
-                for direction in curr_env.direction_list:
-                    if curr_env.check_move(2, id, direction):
-                        possible_moves.append((2, id, direction))
+            if piece:
+                id = piece['id']
+                if piece['color'] == curr_env.player_turn:
+                    for direction in curr_env.direction_list:
+                        if curr_env.check_move(2, id, direction):
+                            possible_moves.append((2, id, direction))
         
         return possible_moves
     
@@ -48,9 +52,6 @@ def HeuristicAgent(env):
                         value -= 50
         return value
         
-    
-    import copy
-    
     possible_moves = find_valid_moves(env)
     best_move = (-1,-1,-1)
     best_value = -100

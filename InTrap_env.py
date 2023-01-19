@@ -37,7 +37,6 @@ class InTrap():
                 id_cnt += 1
                 self.pieces.append(mod_piece)
         self.n_pieces = len(self.pieces) - 1
-        return
     
     def setup(self):
         '''
@@ -63,7 +62,6 @@ class InTrap():
         
         self.player_turn = 1 
         self.winner = 0
-        return
         
     def __init__(self, n_row = 6, n_col = 6):
         '''
@@ -77,7 +75,6 @@ class InTrap():
         self.winner = 0 # 1 or 2
         self.board = np.zeros((n_row, n_col), dtype=np.int32)
         self.setup()
-        return
     
     def __repr__(self):
         '''
@@ -108,11 +105,9 @@ class InTrap():
         Update the queue list of the pieces
         '''
         for piece in self.pieces:
-            if piece == None:
-                continue
-            if piece['color'] == self.player_turn:
-                piece['queue'] = max(0, piece['queue']-1)
-        return
+            if piece:
+                if piece['color'] == self.player_turn:
+                    piece['queue'] = max(0, piece['queue']-1)
 
     def check_move(self, mtype, id, direction):
         '''
@@ -141,10 +136,7 @@ class InTrap():
                 return False
 
              # Check if the piece queue is done:
-            if piece['queue'] != 0:
-                return False
-                
-            return True
+            return piece['queue'] == 0
 
         # Piece already inside the board
         elif mtype == 2:
@@ -154,10 +146,7 @@ class InTrap():
 
             # Check if pos tile is already filled
             new_pos = self.wrap(piece['position'][0]+drow*djump, piece['position'][1]+dcol*djump)
-            if self.board[new_pos] != 0:
-                return False
-            
-            return True
+            return self.board[new_pos] == 0
     
     def check_capture(self, mtype, id, direction):
         '''
@@ -192,7 +181,6 @@ class InTrap():
         '''
         self.board[pos[0]][pos[1]] = id
         self.pieces[id]['position'] = pos
-        return
 
     def move(self, mtype, id, direction, check_validity = True):
         '''
@@ -256,9 +244,7 @@ class InTrap():
     
         return True
 
-GLOBAL_MAX_STEPS = 200
-
-def simulate_game(env, agent1, agent2, MAX_STEPS = GLOBAL_MAX_STEPS, verbose = False):
+def simulate_game(env, agent1, agent2, MAX_STEPS = 200, verbose = False):
     '''
     Simulates a game between agent1 and agent2.
     Verbose mode prints the game.
@@ -268,17 +254,19 @@ def simulate_game(env, agent1, agent2, MAX_STEPS = GLOBAL_MAX_STEPS, verbose = F
     for i in range(MAX_STEPS):
         if env.player_turn == 1:
             mtype, id, direction = agent1(env)
-            env.move(mtype, id, direction)
+            valid = env.move(mtype, id, direction)
+            if verbose and valid: print(mtype, id, direction)
         else:
             mtype, id, direction = agent2(env)
-            env.move(mtype, id, direction)
+            valid = env.move(mtype, id, direction)
+            if verbose and valid: print(mtype, id, direction)
         if verbose: print(env)
         if env.winner != 0:
             if verbose: print(f'Winner is player {env.winner}.')
             return env.winner
     return 0
 
-def evaluate(env, agent1, agent2, verbose = False, N_GAMES = 100, MAX_STEPS = GLOBAL_MAX_STEPS):
+def evaluate(env, agent1, agent2, verbose = False, N_GAMES = 100, MAX_STEPS = 200):
     '''
     Simulates N_GAMES amount of games between agent1 and agent2.
     Verbose mode prints the game.

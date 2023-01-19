@@ -5,34 +5,33 @@ def NegaMaxAgent(env):
     A good benchmark will be to defeat this agent.
     (This version is quite slow to run)
     '''
+
+    import copy
+    import random
     
     def find_valid_moves(curr_env):
         possible_moves = []
         
         # mtype = 1
         for piece in curr_env.pieces:
-            if piece == None:
-                continue
-            if piece['position'] == (-1,-1):
-                for direction in curr_env.direction_list:
-                    id = piece['id']
-                    if curr_env.check_move(1, id, direction):
-                        possible_moves.append((1, id, direction))
+            if piece:
+                if piece['position'] == (-1,-1):
+                    for direction in curr_env.direction_list:
+                        id = piece['id']
+                        if curr_env.check_move(1, id, direction):
+                            possible_moves.append((1, id, direction))
         
         # mtype = 2
         for piece in curr_env.pieces:
-            if piece == None:
-                continue
-            id = piece['id']
-            if piece['color'] == curr_env.player_turn:
-                for direction in curr_env.direction_list:
-                    if curr_env.check_move(2, id, direction):
-                        possible_moves.append((2, id, direction))
+            if piece:
+                id = piece['id']
+                if piece['color'] == curr_env.player_turn:
+                    for direction in curr_env.direction_list:
+                        if curr_env.check_move(2, id, direction):
+                            possible_moves.append((2, id, direction))
         
         return possible_moves
     
-    import copy
-    import random
     def negamax_tree(curr_env, depth = 2, player_sign = 1):
         if depth == 0:
             return 0, (-1,-1,-1)

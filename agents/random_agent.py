@@ -1,32 +1,33 @@
 def RandomAgent(env):
     '''
-    Choosing a random move every turn.
+    Choosing a random valid move every turn.
     '''
-
+    
     import random
-    mtype = random.randint(1,2)
-    direction = random.choice(env.direction_list)
-    id = None
-    if mtype == 1:
-        unique_id = []
-        for piece in env.pieces:
-            if piece == None:
-                continue
-            if piece['position'] == (-1,-1):
-                unique_id.append(piece['id'])
-        if len(unique_id) == 0:
-            return RandomAgent(env)
-        id = random.choice(unique_id)
-    else:
-        unique_id = []
-        for rows in env.board:
-            for id in rows:
-                if id == 0:
-                    continue
-                if id not in unique_id:
-                    if env.pieces[int(id)]['color'] == env.player_turn:
-                        unique_id.append(id)
-        if len(unique_id) == 0:
-            return RandomAgent(env)
-        id = random.choice(unique_id)
+
+    def find_valid_moves(curr_env):
+        possible_moves = []
+        
+        # mtype = 1
+        for piece in curr_env.pieces:
+            if piece:
+                if piece['position'] == (-1,-1):
+                    for direction in curr_env.direction_list:
+                        id = piece['id']
+                        if curr_env.check_move(1, id, direction):
+                            possible_moves.append((1, id, direction))
+        
+        # mtype = 2
+        for piece in curr_env.pieces:
+            if piece:
+                id = piece['id']
+                if piece['color'] == curr_env.player_turn:
+                    for direction in curr_env.direction_list:
+                        if curr_env.check_move(2, id, direction):
+                            possible_moves.append((2, id, direction))
+        
+        return possible_moves
+
+    possible_moves = find_valid_moves(env)
+    mtype, id, direction = random.choice(possible_moves)
     return mtype, id, direction
