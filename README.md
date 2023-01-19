@@ -1,4 +1,4 @@
-# In-Trap-Board-Game v0
+# In-Trap-Board-Game
 A turn-based board game originally created by me (Joshua AC).
 
 ## Board and Pieces
@@ -32,7 +32,8 @@ However, if the player lands on a tile with an opponent's piece, the opponent's 
 A player instantly wins if they capture the opponent's spawner.
 
 ## Updates
-Version 0:
+Version 1.0:
 Create the base logic of the game. 
 Added simple agents (Random, CheckTrap, NegaMax). 
+Added Heuristic Template.
 Functions are available for testing agents.
