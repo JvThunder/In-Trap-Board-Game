@@ -3,7 +3,7 @@ A turn-based board game originally created by me (Joshua AC).
 
 ## Board and Pieces
 The game will be played in a 6x6 grid. 
-Each player will have 1 spawner piece and (currently) 7 other pieces.
+Each player will have 1 spawner piece and (currently) 8 other pieces.
 Each tile can only be placed by 1 piece.
 The details of the name and movement of the pieces is in the pieces.json file.
 
@@ -47,3 +47,4 @@ Separated the game environment, evaluation functions and agents as modules.
 
 ### Version 1.2
 Changed the queue into 5 instead of 3 to incentivize capturing more.
+Add 1 piece to the pieces.json file making a total of 9 pieces including the spawner.
