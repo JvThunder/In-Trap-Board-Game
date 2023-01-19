@@ -41,7 +41,7 @@ However, if the player lands on a tile with an opponent's piece, the opponent's 
 
 ## Winning Condition
 A player instantly wins if they capture the opponent's spawner. 
-The game will automatically end as a draw in 500 moves if no spawners are captured yet.
+The game will automatically end as a draw in 200 moves if no spawners are captured yet.
 
 ## Updates
 ### Version 1.0
