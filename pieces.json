@@ -1,0 +1,58 @@
+[
+    {
+        "name"        : "Spawner",
+        "display"     : "SP",
+        "movement"    : [[1,1,1],
+                         [1,0,1],
+                         [1,1,1]]
+    },
+    {
+        "name"        : "Flier",
+        "display"     : "FL",
+        "movement"    : [[2,2,2],
+                         [2,0,2],
+                         [1,2,1]]
+    },
+    {
+        "name"        : "Charger",
+        "display"     : "CH",
+        "movement"    : [[2,3,2],
+                         [1,0,1],
+                         [1,1,1]]
+    },
+    {
+        "name"        : "Crazy-Crab",
+        "display"     : "CC",
+        "movement"    : [[0,1,0],
+                         [4,0,4],
+                         [0,0,0]]
+    },
+    {
+        "name"        : "Jumper",
+        "display"     : "JP",
+        "movement"    : [[0,3,0],
+                         [3,0,3],
+                         [0,3,0]]
+    },
+    {
+        "name"        : "Swinger",
+        "display"     : "SW",
+        "movement"    : [[2,0,2],
+                         [3,0,3],
+                         [1,0,1]]
+    },
+    {
+        "name"        : "Left-Swinger",
+        "display"     : "LS",
+        "movement"    : [[4,1,0],
+                         [1,0,0],
+                         [0,0,0]]
+    },
+    {
+        "name"        : "Right-Swinger",
+        "display"     : "RS",
+        "movement"    : [[0,1,4],
+                         [0,0,1],
+                         [0,0,0]]
+    }
+]
