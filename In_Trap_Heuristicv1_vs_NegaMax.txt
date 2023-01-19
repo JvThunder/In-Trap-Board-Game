@@ -1,0 +1,323 @@
+  X   X   X   X  SP2  X 
+  X   X   X   X   X   X 
+  X   X   X   X   X   X 
+  X   X   X   X   X   X 
+  X   X   X   X   X   X 
+  X  SP1  X   X   X   X 
+
+  X   X   X   X  SP2  X 
+  X   X   X   X   X   X 
+  X   X   X   X   X   X 
+  X   X   X   X   X   X 
+  X  SP1  X   X   X   X 
+  X   X   X   X   X   X 
+
+  X   X   X   X  SP2  X 
+  X   X   X   X   X   X 
+  X   X   X   X   X   X 
+  X   X   X   X   X   X 
+  X  SP1  X   X   X   X 
+  X   X   X   X   X  FL2
+
+  X   X   X   X  SP2  X 
+  X   X   X   X   X   X 
+  X   X   X   X   X   X 
+ FL1  X   X   X   X   X 
+  X  SP1  X   X   X   X 
+  X   X   X   X   X  FL2
+
+  X   X   X   X  SP2  X 
+  X   X   X   X   X   X 
+  X   X   X   X   X   X 
+ FL1  X   X   X   X   X 
+  X  SP1  X   X   X   X 
+  X   X   X   X  CC2 FL2
+
+  X   X   X   X  SP2  X 
+  X   X   X   X   X   X 
+  X   X   X   X   X   X 
+ FL1 JP1  X   X   X   X 
+  X  SP1  X   X   X   X 
+  X   X   X   X  CC2 FL2
+
+  X   X   X   X  SP2  X 
+  X   X   X   X  JP2  X 
+  X   X   X   X   X   X 
+ FL1 JP1  X   X   X   X 
+  X  SP1  X   X   X   X 
+  X   X   X   X  CC2 FL2
+
+  X   X   X   X  SP2  X 
+  X   X   X   X  JP2  X 
+  X   X   X   X   X   X 
+ FL1 JP1 CH1  X   X   X 
+  X  SP1  X   X   X   X 
+  X   X   X   X  CC2 FL2
+
+  X   X   X   X  SP2  X 
+  X   X   X   X   X   X 
+  X   X   X   X   X   X 
+ FL1 JP1 CH1  X   X   X 
+  X  SP1  X   X  JP2  X 
+  X   X   X   X  CC2 FL2
+
+  X   X   X   X  SP2  X 
+  X   X   X   X   X   X 
+  X   X   X   X   X   X 
+ FL1 JP1 CH1  X   X   X 
+ CC1 SP1  X   X  JP2  X 
+  X   X   X   X  CC2 FL2
+
+  X   X   X   X  SP2  X 
+  X   X   X   X  JP2  X 
+  X   X   X   X   X   X 
+ FL1 JP1 CH1  X   X   X 
+ CC1 SP1  X   X   X   X 
+  X   X   X   X  CC2 FL2
+
+  X   X   X   X  SP2  X 
+  X   X   X   X  JP2  X 
+  X   X   X   X   X   X 
+ FL1 JP1 CH1  X   X   X 
+ CC1 SP1 SW1  X   X   X 
+  X   X   X   X  CC2 FL2
+
+  X   X   X   X  SP2  X 
+  X   X   X   X  JP2  X 
+  X   X   X   X   X   X 
+ FL1 JP1 CH1  X   X   X 
+ CC1 SP1 SW1  X   X   X 
+  X   X   X  CH2 CC2 FL2
+
+  X   X   X   X  SP2  X 
+  X   X   X   X  JP2  X 
+  X   X   X   X   X   X 
+ FL1 JP1 CH1  X   X   X 
+ CC1 SP1 SW1  X   X   X 
+ LS1  X   X  CH2 CC2 FL2
+
+  X   X   X  SP2  X   X 
+  X   X   X   X  JP2  X 
+  X   X   X   X   X   X 
+ FL1 JP1 CH1  X   X   X 
+ CC1 SP1 SW1  X   X   X 
+ LS1  X   X  CH2 CC2 FL2
+
+  X   X   X  SP2  X   X 
+  X   X   X   X  JP2  X 
+  X   X   X   X   X   X 
+ FL1 JP1 CH1  X   X   X 
+ CC1 SP1 SW1  X   X   X 
+ LS1 RS1  X  CH2 CC2 FL2
+
+  X   X   X  SP2 SW2  X 
+  X   X   X   X  JP2  X 
+  X   X   X   X   X   X 
+ FL1 JP1 CH1  X   X   X 
+ CC1 SP1 SW1  X   X   X 
+ LS1 RS1  X  CH2 CC2 FL2
+
+  X   X   X  SP2 SW2  X 
+ FL1  X   X   X  JP2  X 
+  X   X   X   X   X   X 
+  X  JP1 CH1  X   X   X 
+ CC1 SP1 SW1  X   X   X 
+ LS1 RS1  X  CH2 CC2 FL2
+
+  X   X   X  SP2  X   X 
+ FL1  X   X  SW2 JP2  X 
+  X   X   X   X   X   X 
+  X  JP1 CH1  X   X   X 
+ CC1 SP1 SW1  X   X   X 
+ LS1 RS1  X  CH2 CC2 FL2
+
+  X   X   X  SP2  X   X 
+ FL1  X   X  SW2 JP2  X 
+  X   X   X   X   X   X 
+ SP1 JP1 CH1  X   X   X 
+ CC1  X  SW1  X   X   X 
+ LS1 RS1  X  CH2 CC2 FL2
+
+  X   X   X   X  SP2  X 
+ FL1  X   X  SW2 JP2  X 
+  X   X   X   X   X   X 
+ SP1 JP1 CH1  X   X   X 
+ CC1  X  SW1  X   X   X 
+ LS1 RS1  X  CH2 CC2 FL2
+
+  X   X   X   X  SP2  X 
+ FL1  X   X  SW2 JP2  X 
+  X   X   X   X   X  SP1
+  X  JP1 CH1  X   X   X 
+ CC1  X  SW1  X   X   X 
+ LS1 RS1  X  CH2 CC2 FL2
+
+  X   X   X  CH2 SP2  X 
+ FL1  X   X  SW2 JP2  X 
+  X   X   X   X   X  SP1
+  X  JP1 CH1  X   X   X 
+ CC1  X  SW1  X   X   X 
+ LS1 RS1  X   X  CC2 FL2
+
+  X   X   X  CH2 SP2  X 
+ FL1  X   X  SW2 JP2  X 
+ SP1  X   X   X   X   X 
+  X  JP1 CH1  X   X   X 
+ CC1  X  SW1  X   X   X 
+ LS1 RS1  X   X  CC2 FL2
+
+  X   X   X  CH2 SP2  X 
+ FL1  X   X  SW2 JP2 FL2
+ SP1  X   X   X   X   X 
+  X  JP1 CH1  X   X   X 
+ CC1  X  SW1  X   X   X 
+ LS1 RS1  X   X  CC2  X 
+
+  X   X   X  CH2 SP2  X 
+ FL1  X   X  SW2 JP2 FL2
+  X  SP1  X   X   X   X 
+  X  JP1 CH1  X   X   X 
+ CC1  X  SW1  X   X   X 
+ LS1 RS1  X   X  CC2  X 
+
+  X   X   X  CH2 SP2  X 
+ FL1  X   X  SW2  X  FL2
+  X  SP1  X   X   X   X 
+  X  JP1 CH1  X   X   X 
+ CC1  X  SW1  X  JP2  X 
+ LS1 RS1  X   X  CC2  X 
+
+  X   X   X  CH2 SP2  X 
+ FL1  X   X  SW2  X  FL2
+ SP1  X   X   X   X   X 
+  X  JP1 CH1  X   X   X 
+ CC1  X  SW1  X  JP2  X 
+ LS1 RS1  X   X  CC2  X 
+
+  X   X   X  CH2 SP2  X 
+ FL1  X   X  SW2  X  FL2
+ SP1  X   X   X   X   X 
+  X  JP1 CH1  X   X   X 
+ CC1  X  SW1  X  JP2  X 
+ LS1 RS1  X  RS2 CC2  X 
+
+  X   X   X  CH2 SP2  X 
+ FL1  X   X  SW2  X  FL2
+  X  SP1  X   X   X   X 
+  X  JP1 CH1  X   X   X 
+ CC1  X  SW1  X  JP2  X 
+ LS1 RS1  X  RS2 CC2  X 
+
+  X   X   X   X  SP2  X 
+ FL1  X  CH2 SW2  X  FL2
+  X  SP1  X   X   X   X 
+  X  JP1 CH1  X   X   X 
+ CC1  X  SW1  X  JP2  X 
+ LS1 RS1  X  RS2 CC2  X 
+
+  X   X   X   X  SP2  X 
+ FL1  X  CH2 SW2  X  FL2
+  X   X   X   X   X   X 
+ SP1 JP1 CH1  X   X   X 
+ CC1  X  SW1  X  JP2  X 
+ LS1 RS1  X  RS2 CC2  X 
+
+  X   X   X   X  SP2  X 
+  X  FL2 CH2 SW2  X   X 
+  X   X   X   X   X   X 
+ SP1 JP1 CH1  X   X   X 
+ CC1  X  SW1  X  JP2  X 
+ LS1 RS1  X  RS2 CC2  X 
+
+  X   X   X   X  SP2  X 
+  X  FL2 CH2 SW2  X   X 
+  X   X   X   X   X  SP1
+  X  JP1 CH1  X   X   X 
+ CC1  X  SW1  X  JP2  X 
+ LS1 RS1  X  RS2 CC2  X 
+
+  X   X   X   X  SP2  X 
+ SW2 FL2 CH2  X   X   X 
+  X   X   X   X   X  SP1
+  X  JP1 CH1  X   X   X 
+ CC1  X  SW1  X  JP2  X 
+ LS1 RS1  X  RS2 CC2  X 
+
+  X   X   X   X  SP2  X 
+ SW2 FL2 CH2  X   X   X 
+  X   X   X   X   X   X 
+ SP1 JP1 CH1  X   X   X 
+ CC1  X  SW1  X  JP2  X 
+ LS1 RS1  X  RS2 CC2  X 
+
+  X   X   X   X  SP2  X 
+ SW2 FL2  X   X   X   X 
+  X  CH2  X   X   X   X 
+ SP1 JP1 CH1  X   X   X 
+ CC1  X  SW1  X  JP2  X 
+ LS1 RS1  X  RS2 CC2  X 
+
+  X   X   X   X  SP2  X 
+ SW2 FL2  X   X   X   X 
+  X  CH2  X   X   X  FL1
+ SP1 JP1 CH1  X   X   X 
+ CC1  X  SW1  X  JP2  X 
+ LS1 RS1  X  RS2 CC2  X 
+
+  X   X   X   X  SP2 LS2
+ SW2 FL2  X   X   X   X 
+  X  CH2  X   X   X  FL1
+ SP1 JP1 CH1  X   X   X 
+ CC1  X  SW1  X  JP2  X 
+ LS1 RS1  X  RS2 CC2  X 
+
+  X   X   X   X  SP2 LS2
+ SW2 FL2  X   X   X   X 
+  X  CH2  X   X   X  FL1
+  X  JP1 CH1  X   X   X 
+ CC1 SP1 SW1  X  JP2  X 
+ LS1 RS1  X  RS2 CC2  X 
+
+  X   X   X   X  SP2  X 
+ SW2 FL2  X   X   X   X 
+  X  CH2  X   X   X  FL1
+  X  JP1 CH1  X   X   X 
+ CC1 SP1 SW1  X  JP2  X 
+ LS1 RS1  X  RS2 CC2 LS2
+
+  X   X   X   X  SP2  X 
+ SW2 FL2  X   X   X   X 
+  X  CH2  X   X   X  FL1
+ SP1 JP1 CH1  X   X   X 
+ CC1  X  SW1  X  JP2  X 
+ LS1 RS1  X  RS2 CC2 LS2
+
+  X   X   X   X  SP2  X 
+ SW2  X   X  FL2  X   X 
+  X  CH2  X   X   X  FL1
+ SP1 JP1 CH1  X   X   X 
+ CC1  X  SW1  X  JP2  X 
+ LS1 RS1  X  RS2 CC2 LS2
+
+  X   X   X   X  SP2  X 
+ SW2  X   X  FL2  X   X 
+  X  CH2  X   X   X  FL1
+  X  JP1 CH1  X   X   X 
+ CC1 SP1 SW1  X  JP2  X 
+ LS1 RS1  X  RS2 CC2 LS2
+
+  X   X   X   X   X   X 
+ SW2  X   X  FL2  X  SP2
+  X  CH2  X   X   X  FL1
+  X  JP1 CH1  X   X   X 
+ CC1 SP1 SW1  X  JP2  X 
+ LS1 RS1  X  RS2 CC2 LS2
+
+  X   X   X   X   X  FL1
+ SW2  X   X  FL2  X   X 
+  X  CH2  X   X   X   X 
+  X  JP1 CH1  X   X   X 
+ CC1 SP1 SW1  X  JP2  X 
+ LS1 RS1  X  RS2 CC2 LS2
+
+Winner is player 1.
