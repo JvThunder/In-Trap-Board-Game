@@ -1,5 +1,7 @@
 # In-Trap-Board-Game
-A turn-based board game originally created by me (Joshua AC).
+A turn-based board game originally created by me (Joshua AC). 
+All codes are also written by me.
+Feel free to give feedback to the game and code.
 
 ## Board and Pieces
 The game will be played in a 6x6 grid. 
