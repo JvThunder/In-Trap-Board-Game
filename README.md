@@ -32,12 +32,12 @@ However, if the player lands on a tile with an opponent's piece, the opponent's 
 A player instantly wins if they capture the opponent's spawner.
 
 ## Updates
-### Version 1.0:
+### Version 1.0
 Create the base logic of the game. 
 Added simple agents (Random, CheckTrap, NegaMax). 
 Added Heuristic Template.
 Functions are available for testing agents.
-### Version 1.1:
+### Version 1.1
 Added a simple Heuristic Agent.
 Currently Heuristic vs Heuristic ends up in a neverending game. 
 (Will be fixed by adjusting rules and pieces in the future)
