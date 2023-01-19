@@ -29,7 +29,8 @@ The opponent can respawn this piece after 3 turns.
 However, if the player lands on a tile with an opponent's piece, the opponent's piece will NOT be captured and the move is invalid.
 
 ## Winning Condition
-A player instantly wins if they capture the opponent's spawner.
+A player instantly wins if they capture the opponent's spawner. 
+The game will automatically end as a draw in 500 moves if no spawners are captured yet.
 
 ## Updates
 ### Version 1.0
@@ -41,4 +42,4 @@ Functions are available for testing agents.
 Added a simple Heuristic Agent.
 Currently Heuristic vs Heuristic ends up in a neverending game. 
 (Will be fixed by adjusting rules and pieces in the future)
-Separated the game environment and evaluation functions as modules.
+Separated the game environment, evaluation functions and agents as modules.

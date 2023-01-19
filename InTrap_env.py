@@ -257,7 +257,7 @@ class InTrap():
     
         return True
 
-def simulate_game(env, agent1, agent2, MAX_STEPS = 1000, verbose = False):
+def simulate_game(env, agent1, agent2, MAX_STEPS = 500, verbose = False):
     '''
     Simulates a game between agent1 and agent2.
     Verbose mode prints the game.
@@ -277,7 +277,7 @@ def simulate_game(env, agent1, agent2, MAX_STEPS = 1000, verbose = False):
             return env.winner
     return 0
 
-def evaluate(env, agent1, agent2, verbose = False, N_GAMES = 100):
+def evaluate(env, agent1, agent2, verbose = False, N_GAMES = 100, MAX_STEPS = 500):
     '''
     Simulates N_GAMES amount of games between agent1 and agent2.
     Verbose mode prints the game.
@@ -286,7 +286,7 @@ def evaluate(env, agent1, agent2, verbose = False, N_GAMES = 100):
     for i in range(N_GAMES):
         if verbose and i%10==9:
             print(stats)
-        winner = simulate_game(env, agent1, agent2, verbose = verbose)
+        winner = simulate_game(env, agent1, agent2, verbose = verbose, MAX_STEPS = MAX_STEPS)
         if winner != 0:
             stats[winner-1] += 1
     print(f'Agent 1 wins {stats[0]*100//N_GAMES}% of the time.')
