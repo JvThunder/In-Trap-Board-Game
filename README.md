@@ -73,4 +73,9 @@ Add 1 piece to the pieces.json file making a total of 9 pieces including the spa
 
 ### Version 1.3
 Cleaning code, readme, adding main.py and adding an option for user to play with agent.
-Also planning on optimizing several lines.
+
+### Future Updates
+Pieces being captured is still not punishing enough.
+I need to change the way it can respawn back.
+Possible fixes might be to use mana costs to spawn back,
+and players can gain mana from capturing pieces as well.
