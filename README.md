@@ -23,9 +23,9 @@ The initial setup will look like this:
 Each player will take turns doing an action.
 There are 2 actions available:
 1. Placing a piece on an empty tile adjacent (the 8 neighbouring tiles) to the Spawner piece.
-2. Move a piece on the board to an empty tile according to their movement.
+2. Move a piece on the board to an empty tile according to their movement. The board wraps itself on both columns and rows.
 If the player jumps over an opponent's piece, the opponent's piece will be captured and removed from the board.
-The opponent can respawn this piece after 3 turns.
+The opponent can respawn this piece after 5 turns.
 However, if the player lands on a tile with an opponent's piece, the opponent's piece will NOT be captured and the move is invalid.
 
 ## Winning Condition
@@ -38,8 +38,12 @@ Create the base logic of the game.
 Added simple agents (Random, CheckTrap, NegaMax). 
 Added Heuristic Template.
 Functions are available for testing agents.
+
 ### Version 1.1
 Added a simple Heuristic Agent.
 Currently Heuristic vs Heuristic ends up in a neverending game. 
 (Will be fixed by adjusting rules and pieces in the future)
 Separated the game environment, evaluation functions and agents as modules.
+
+### Version 1.2
+Changed the queue into 5 instead of 3 to incentivize capturing more.

@@ -21,6 +21,13 @@
                          [0,3,0]]
     },
     {
+        "name"        : "Dasher",
+        "display"     : "DS",
+        "movement"    : [[3,0,3],
+                         [0,0,0],
+                         [3,0,3]]
+    },
+    {
         "name"        : "Charger",
         "display"     : "CH",
         "movement"    : [[2,3,2],

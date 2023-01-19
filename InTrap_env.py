@@ -13,7 +13,7 @@ class InTrap():
         "SE"  : ( 1,  1), # South East (Bottom Right)
     }
 
-    QUEUE_TURN = 3
+    QUEUE_TURN = 5
 
     def add_pieces(self):
         '''
@@ -167,7 +167,6 @@ class InTrap():
         drow, dcol = self.DIRECTION[direction]
         djump = piece["movement"][drow+1][dcol+1]
         player_color = self.player_turn
-        spawner = self.pieces[player_color]
         capture_list = []
         for i in range(1, djump):
             cur_row, cur_col = self.wrap(piece['position'][0] + drow * i, piece['position'][1] + dcol * i)
@@ -257,7 +256,9 @@ class InTrap():
     
         return True
 
-def simulate_game(env, agent1, agent2, MAX_STEPS = 500, verbose = False):
+GLOBAL_MAX_STEPS = 200
+
+def simulate_game(env, agent1, agent2, MAX_STEPS = GLOBAL_MAX_STEPS, verbose = False):
     '''
     Simulates a game between agent1 and agent2.
     Verbose mode prints the game.
@@ -277,7 +278,7 @@ def simulate_game(env, agent1, agent2, MAX_STEPS = 500, verbose = False):
             return env.winner
     return 0
 
-def evaluate(env, agent1, agent2, verbose = False, N_GAMES = 100, MAX_STEPS = 500):
+def evaluate(env, agent1, agent2, verbose = False, N_GAMES = 100, MAX_STEPS = GLOBAL_MAX_STEPS):
     '''
     Simulates N_GAMES amount of games between agent1 and agent2.
     Verbose mode prints the game.
