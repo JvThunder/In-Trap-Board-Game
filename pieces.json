@@ -14,6 +14,13 @@
                          [1,2,1]]
     },
     {
+        "name"        : "Jumper",
+        "display"     : "JP",
+        "movement"    : [[0,3,0],
+                         [3,0,3],
+                         [0,3,0]]
+    },
+    {
         "name"        : "Charger",
         "display"     : "CH",
         "movement"    : [[2,3,2],
@@ -26,13 +33,6 @@
         "movement"    : [[0,1,0],
                          [4,0,4],
                          [0,0,0]]
-    },
-    {
-        "name"        : "Jumper",
-        "display"     : "JP",
-        "movement"    : [[0,3,0],
-                         [3,0,3],
-                         [0,3,0]]
     },
     {
         "name"        : "Swinger",
