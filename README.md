@@ -47,12 +47,12 @@ The game will automatically end as a draw in 200 moves if no spawners are captur
 
 ## How to play with Agent
 You can now play with my heuristic agent by running play_with_agent.py.
-The move format should be int the form of: <move_type> <piece_display_name> <move_direction>.
-<move_type> can be either "spawn" or "move".
-<piece_display_name> follows the display names on piece.json.
-<move_direction> can be "north", "south", "east", "west", "northwest", "northeast", "southwest", "southeast"
-Example move: "spawn FL north"
-Example of me playing with the bot can be seen on the file sample_game_with_user.txt.
+The move format should be int the form of: <move_type> <piece_display_name> <move_direction>.  
+<move_type> can be either "spawn" or "move".  
+<piece_display_name> follows the display names on piece.json.  
+<move_direction> can be "north", "south", "east", "west", "northwest", "northeast", "southwest", "southeast"  
+Example move: "spawn FL north"  
+Example of me playing with the bot can be seen on the file sample_game_with_user.txt.  
 
 ## Updates
 ### Version 1.0
