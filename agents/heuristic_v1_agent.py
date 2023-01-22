@@ -1,4 +1,4 @@
-def HeuristicAgent1(env):
+def HeuristicAgent(env):
     '''
     The best agent so far. It evaluates certain heuristics valuing the pieces on the board 
     and also whether the king is under attacked or not.

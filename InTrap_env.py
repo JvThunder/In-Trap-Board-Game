@@ -52,6 +52,7 @@ class InTrap():
            v  v  v  v  v  v
         '''
         
+        self.n_turns = 1
         self.mana = [0, self.MANA_INIT_P1, self.MANA_INIT_P2]
 
         self.pieces = []
@@ -85,7 +86,7 @@ class InTrap():
         The simple text representation of the board.
         '''
 
-        txt = ""
+        txt = f"Turn {self.n_turns}\n"
         for row in range(self.n_row):
             for col in range(self.n_col):
                 txt += " "
@@ -239,6 +240,9 @@ class InTrap():
 
         # FLip the player_turn
         self.player_turn = 3 - self.player_turn
+
+        # Increment 1 turn
+        self.n_turns += 1
     
         return True
 
