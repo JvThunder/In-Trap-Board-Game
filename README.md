@@ -70,9 +70,9 @@ Added a simple Heuristic Agent.
 Separated the game environment, evaluation functions and agents as file modules.
 
 ### Version 0.1.2
-Changed the queue into 5 instead of 3 to incentivize capturing more.
+Modified the queue system incentivize capturing more.
 Add 1 piece to the pieces.json file making a total of 9 pieces including the spawner.
 
 ### Version 0.1.3
-Changing queues to using mana costs for rebalancing.
+Replace the queueing system to using mana costs for rebalancing.
 Cleaning code, readme, adding main.py and adding an option for user to play with agent. 
