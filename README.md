@@ -8,6 +8,7 @@ The game will be played in a 6x6 grid.
 Each player will have 1 spawner piece and (currently) 8 other pieces.
 Each tile can only be placed by 1 piece.
 The details of the name, spawn cost, and movement of the pieces is in the pieces.json file.
+Each piece has a different moveset and might jump to 8 directions.
 The current list of pieces are:
 - Spawner
 - Flier
