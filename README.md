@@ -23,9 +23,9 @@ The current list of pieces are:
 For each piece, the json dictionary contains information in the following format:
 <pre>
 {
-        "name"        : The name of the piece,
-        "display"     : The initial you need to write when using play_with_agent.py,
-        "cost"        : The amount of mana you will need to spawn this piece,
+        "name"        : (The name of the piece),
+        "display"     : (The initial you need to write when using play_with_agent.py),
+        "cost"        : (The amount of mana you will need to spawn this piece),
         "movement"    : [[northwest,north,northeast],
                          [west,0,east],
                          [southwest,south,southeast]]
