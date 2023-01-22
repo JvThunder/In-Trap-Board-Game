@@ -19,17 +19,17 @@ The current list of pieces are:
 - Swinger
 - Left-Swinger
 - Right-Swinger  
-<pre>
-For each piece, the json dictionary contains information in the following format:
 
+For each piece, the json dictionary contains information in the following format:
+<pre>
 {
         "name"        : The name of the piece,
         "display"     : The initial you need to write when using play_with_agent.py,
         "cost"        : The amount of mana you will need to spawn this piece,
-        "movement"    : [[<NW>,<N>,<NE>],
-                         [<W>,0,<E>],
-                         [<SW>,<S>,<SE>]]
-                         (For each value in <direction>, it will move the piece in that direction according to the value.)
+        "movement"    : [[northwest,north,northeast],
+                         [west,0,east],
+                         [southwest,south,southeast]]
+                         (For each value, it will move the piece in that direction according to the value.)
 }
 </pre>
 
