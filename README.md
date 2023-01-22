@@ -29,7 +29,7 @@ For each piece, the json dictionary contains information in the following format
         "movement"    : [[northwest,north,northeast],
                          [west,0,east],
                          [southwest,south,southeast]]
-                         (For each value, it will move the piece in that direction according to the value.)
+                         (For each value, it will move the piece in that direction according to the value)
 }
 </pre>
 
