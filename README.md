@@ -61,21 +61,16 @@ Added simple agents (Random, CheckTrap, NegaMax).
 Added Heuristic Template.
 Functions are available for testing agents.
 
-### Version 1.1
+### Version 0.1.1
 Added a simple Heuristic Agent.
 Currently Heuristic vs Heuristic ends up in a neverending game. 
 (Will be fixed by adjusting rules and pieces in the future)
 Separated the game environment, evaluation functions and agents as modules.
 
-### Version 1.2
+### Version 0.1.2
 Changed the queue into 5 instead of 3 to incentivize capturing more.
 Add 1 piece to the pieces.json file making a total of 9 pieces including the spawner.
 
-### Version 1.3
-Cleaning code, readme, adding main.py and adding an option for user to play with agent.
-
-### Future Updates
-Pieces being captured is still not punishing enough.
-I need to change the way it can respawn back.
-Possible fixes might be to use mana costs to spawn back,
-and players can gain mana from capturing pieces as well.
+### Version 0.1.3
+Changing queues to using mana costs for rebalancing.
+Cleaning code, readme, adding main.py and adding an option for user to play with agent. 

@@ -13,7 +13,10 @@ class InTrap():
         "SE"  : ( 1,  1), # South East (Bottom Right)
     }
 
-    QUEUE_TURN = 5
+    MANA_INIT_P1 = 4
+    MANA_INIT_P2 = 5
+    MANA_REP     = 1
+    MANA_GET     = 1 
 
     def add_pieces(self):
         '''
@@ -33,7 +36,6 @@ class InTrap():
                 mod_piece['position'] = (-1,-1)
                 mod_piece['color'] = color
                 mod_piece['id'] = id_cnt
-                mod_piece['queue'] = 0
                 id_cnt += 1
                 self.pieces.append(mod_piece)
         self.n_pieces = len(self.pieces) - 1
@@ -49,6 +51,8 @@ class InTrap():
         <  x  SP x  x  x  x  >
            v  v  v  v  v  v
         '''
+        
+        self.mana = [0, self.MANA_INIT_P1, self.MANA_INIT_P2]
 
         self.pieces = []
         self.add_pieces()
@@ -92,6 +96,8 @@ class InTrap():
                 piece = self.pieces[id]
                 txt += piece['display'] + str(piece['color'])
             txt += "\n"
+        txt += f"Player 1 Mana: {self.mana[1]}\n"
+        txt += f"Player 2 Mana: {self.mana[2]}\n"
         return txt
     
     def wrap(self, row, col):
@@ -99,15 +105,6 @@ class InTrap():
         Wrap the board around the edge.
         '''
         return (row % self.n_row + self.n_row) % self.n_row, (col % self.n_col + self.n_col) % self.n_col
-
-    def update_queue(self):
-        '''
-        Update the queue list of the pieces
-        '''
-        for piece in self.pieces:
-            if piece:
-                if piece['color'] == self.player_turn:
-                    piece['queue'] = max(0, piece['queue']-1)
 
     def check_move(self, mtype, id, direction):
         '''
@@ -117,11 +114,10 @@ class InTrap():
         piece = self.pieces[id]
         drow, dcol = self.DIRECTION[direction]
         djump = piece["movement"][drow+1][dcol+1]
-        player_color = self.player_turn
-        spawner = self.pieces[player_color]
+        spawner = self.pieces[self.player_turn]
         
         # Check if the piece id is the current player
-        if piece['color'] != player_color:
+        if piece['color'] != self.player_turn:
             return False
 
         # Piece is still outside of the board
@@ -135,8 +131,8 @@ class InTrap():
             if self.board[new_pos] != 0:
                 return False
 
-             # Check if the piece queue is done:
-            return piece['queue'] == 0
+             # Check if the mana is enough:
+            return self.mana[self.player_turn] >= piece['cost']
 
         # Piece already inside the board
         elif mtype == 2:
@@ -168,12 +164,11 @@ class InTrap():
     
     def remove_piece(self, id):
         '''
-        Remove pieces from the board and update their position and queue.
+        Remove pieces from the board and update their position and mana.
         '''
         c_pos = self.pieces[id]['position']
         self.board[c_pos[0]][c_pos[1]] = 0
         self.pieces[id]['position'] = (-1,-1)
-        self.pieces[id]['queue'] = self.QUEUE_TURN
         
     def place_piece(self, id, pos):
         '''
@@ -213,6 +208,7 @@ class InTrap():
         # Piece is still outside of the board
         if mtype == 1:
             new_pos = self.wrap(spawner['position'][0]+drow, spawner['position'][1]+dcol)
+            self.mana[self.player_turn] -= piece['cost']
             # Place on the new tile
             self.place_piece(id, new_pos)
 
@@ -224,6 +220,8 @@ class InTrap():
             capture_list = self.check_capture(mtype, id, direction)
             for cap_id in capture_list:
                 self.remove_piece(cap_id)
+                self.mana[self.player_turn] += self.MANA_GET
+                
             if 1 in capture_list:
                 self.winner = 2
             if 2 in capture_list:
@@ -236,11 +234,11 @@ class InTrap():
             new_pos = self.wrap(prv_pos[0]+drow*djump, prv_pos[1]+dcol*djump)
             self.place_piece(id, new_pos)
 
+        # Update the mana replenishment
+        self.mana[self.player_turn] += self.MANA_REP
+
         # FLip the player_turn
         self.player_turn = 3 - self.player_turn
-
-        # Update the queue
-        self.update_queue()
     
         return True
 

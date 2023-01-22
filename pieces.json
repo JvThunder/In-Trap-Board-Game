@@ -2,6 +2,7 @@
     {
         "name"        : "Spawner",
         "display"     : "SP",
+        "cost"        : 0,
         "movement"    : [[1,1,1],
                          [1,0,1],
                          [1,1,1]]
@@ -9,6 +10,7 @@
     {
         "name"        : "Flier",
         "display"     : "FL",
+        "cost"        : 5,
         "movement"    : [[2,2,2],
                          [2,0,2],
                          [1,2,1]]
@@ -16,6 +18,7 @@
     {
         "name"        : "Jumper",
         "display"     : "JP",
+        "cost"        : 5,
         "movement"    : [[0,3,0],
                          [3,0,3],
                          [0,3,0]]
@@ -23,6 +26,7 @@
     {
         "name"        : "Dasher",
         "display"     : "DS",
+        "cost"        : 5,
         "movement"    : [[3,0,3],
                          [0,0,0],
                          [3,0,3]]
@@ -30,6 +34,7 @@
     {
         "name"        : "Charger",
         "display"     : "CH",
+        "cost"        : 5,
         "movement"    : [[2,3,2],
                          [1,0,1],
                          [1,1,1]]
@@ -37,6 +42,7 @@
     {
         "name"        : "Crazy-Crab",
         "display"     : "CC",
+        "cost"        : 5,
         "movement"    : [[0,1,0],
                          [4,0,4],
                          [0,0,0]]
@@ -44,6 +50,7 @@
     {
         "name"        : "Swinger",
         "display"     : "SW",
+        "cost"        : 5,
         "movement"    : [[2,0,2],
                          [3,0,3],
                          [1,0,1]]
@@ -51,6 +58,7 @@
     {
         "name"        : "Left-Swinger",
         "display"     : "LS",
+        "cost"        : 5,
         "movement"    : [[4,1,0],
                          [1,0,0],
                          [0,0,0]]
@@ -58,6 +66,7 @@
     {
         "name"        : "Right-Swinger",
         "display"     : "RS",
+        "cost"        : 5,
         "movement"    : [[0,1,4],
                          [0,0,1],
                          [0,0,0]]
