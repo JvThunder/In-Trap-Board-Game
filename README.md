@@ -60,15 +60,13 @@ Example of me playing with the bot can be seen on the file sample_game_with_user
 ## Updates
 ### Version 0.1.0
 Create the base logic of the game. 
-Added simple agents (Random, CheckTrap, NegaMax). 
+Added simple agents (Random, NegaMax). 
 Added Heuristic Template.
 Functions are available for testing agents.
 
 ### Version 0.1.1
 Added a simple Heuristic Agent.
-Currently Heuristic vs Heuristic ends up in a neverending game. 
-(Will be fixed by adjusting rules and pieces in the future)
-Separated the game environment, evaluation functions and agents as modules.
+Separated the game environment, evaluation functions and agents as file modules.
 
 ### Version 0.1.2
 Changed the queue into 5 instead of 3 to incentivize capturing more.
