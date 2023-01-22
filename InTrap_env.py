@@ -1,5 +1,6 @@
 import numpy as np
 import json
+import os
 
 class InTrap():    
     DIRECTION = {
@@ -26,7 +27,8 @@ class InTrap():
         2nd player spawner id: 2.
         '''
 
-        f = open('pieces.json')
+        dir_path = os.path.dirname(os.path.realpath(__file__))
+        f = open(dir_path + '\pieces.json')
         data = json.load(f)
         id_cnt = 1
         self.pieces.append(None)
