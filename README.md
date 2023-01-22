@@ -39,10 +39,11 @@ There are 2 actions available:
 1. Placing a piece on an empty tile adjacent (the 8 neighbouring tiles) to the Spawner piece. This will reduce the mana by the cost of the piece.  
 2. Move a piece on the board to an empty tile according to their moveset from the pieces.json file. The board wraps itself on both columns and rows.  
 
-If the player jumps over an opponent's piece, the opponent's piece will be captured and removed from the board.
+If the player jumps over an opponent's piece, the opponent's piece will be captured and removed from the board. 
+For every piece captured, the player gets 1 mana.
 The opponent can respawn this piece with a some cost of mana described in pieces.json.
 However, if the player lands on a tile with an opponent's piece, the opponent's piece will NOT be captured and the move is invalid.  
-After the turn ends, the player will get 1 mana replenished.
+After the turn ends, the player will get 1 additional mana replenished.
 
 ## Winning Condition
 A player instantly wins if they capture the opponent's spawner. 
