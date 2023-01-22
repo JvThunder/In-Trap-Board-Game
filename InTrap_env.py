@@ -109,7 +109,7 @@ class InTrap():
         '''
         return (row % self.n_row + self.n_row) % self.n_row, (col % self.n_col + self.n_col) % self.n_col
 
-    def check_move(self, mtype, id, direction):
+    def check_move(self, mtype, id, direction, error_message = False):
         '''
         Check if the move is valid.
         '''
@@ -121,31 +121,41 @@ class InTrap():
         
         # Check if the piece id is the current player
         if piece['color'] != self.player_turn:
+            if error_message: print('This is not your piece.')
             return False
 
         # Piece is still outside of the board
         if mtype == 1:
             # Check if piece is outside of the board
             if piece['position'] != (-1,-1):
+                if error_message: print('Piece is already inside the board.')
                 return False
 
             # Check if pos tile is already filled
             new_pos = self.wrap(spawner['position'][0]+drow, spawner['position'][1]+dcol)
             if self.board[new_pos] != 0:
+                if error_message: print('The destination tile is already placed by another piece.')
                 return False
 
              # Check if the mana is enough:
-            return self.mana[self.player_turn] >= piece['cost']
+            if self.mana[self.player_turn] < piece['cost']:
+                if error_message: print('Your mana is not enough.')
+                return False
+            return True
 
         # Piece already inside the board
         elif mtype == 2:
             # Check if piece is inside of the board
             if piece['position'] == (-1,-1):
+                if error_message: print('Piece is not inside the board.')
                 return False
 
             # Check if pos tile is already filled
             new_pos = self.wrap(piece['position'][0]+drow*djump, piece['position'][1]+dcol*djump)
-            return self.board[new_pos] == 0
+            if self.board[new_pos] != 0:
+                if error_message: print('The destination tile is already placed by another piece.')
+                return False
+            return True
     
     def check_capture(self, mtype, id, direction):
         '''
@@ -180,7 +190,7 @@ class InTrap():
         self.board[pos[0]][pos[1]] = id
         self.pieces[id]['position'] = pos
 
-    def move(self, mtype, id, direction, check_validity = True):
+    def move(self, mtype, id, direction, check_validity = True, error_message = False):
         '''
         There is two possible moves (mtype):
         1. Place a piece on a tile adjacent to the Spawner piece.
@@ -205,7 +215,7 @@ class InTrap():
 
         # Check validity
         if check_validity: 
-            if self.check_move(mtype, id, direction) == False:
+            if self.check_move(mtype, id, direction, error_message) == False:
                 return False
 
         # Piece is still outside of the board

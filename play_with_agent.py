@@ -4,29 +4,7 @@ from InTrap_env import InTrap
 env = InTrap()
 
 def UserAgent(env):
-    def find_valid_moves(curr_env):
-        possible_moves = []
-        
-        # mtype = 1
-        for piece in curr_env.pieces:
-            if piece:
-                if piece['position'] == (-1,-1):
-                    for direction in curr_env.direction_list:
-                        id = piece['id']
-                        if curr_env.check_move(1, id, direction):
-                            possible_moves.append((1, id, direction))
-        
-        # mtype = 2
-        for piece in curr_env.pieces:
-            if piece:
-                id = piece['id']
-                if piece['color'] == curr_env.player_turn:
-                    for direction in curr_env.direction_list:
-                        if curr_env.check_move(2, id, direction):
-                            possible_moves.append((2, id, direction))
-        
-        return possible_moves
-    
+
     mtype_list = {"spawn": 1, "move": 2}
     id_list = {}
     for piece in env.pieces:
@@ -43,17 +21,16 @@ def UserAgent(env):
         "southwest" : "SW",
     }
 
-    def check_input(mtype, id, direction, possible_moves):
+    def check_input(mtype, id, direction):
         if mtype in mtype_list and id in id_list and direction in direction_list:
             mtype = mtype_list[mtype]
             id = id_list[id]
             direction = direction_list[direction]
-            return (mtype, id, direction) in possible_moves
+            return env.check_move(mtype, id, direction, error_message = True)
         return False
         
-    possible_moves = find_valid_moves(env)
     mtype, id, direction = input("Enter your move: ").split(' ')
-    while not check_input(mtype, id, direction, possible_moves):
+    while check_input(mtype, id, direction) == False:
         print("Invalid move, please make another move.")
         mtype, id, direction = input("Enter your move: ").split(' ')
 
