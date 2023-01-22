@@ -7,7 +7,7 @@ Feel free to give feedback to the game and code.
 The game will be played in a 6x6 grid. 
 Each player will have 1 spawner piece and (currently) 8 other pieces.
 Each tile can only be placed by 1 piece.
-The details of the name and movement of the pieces is in the pieces.json file.
+The details of the name, spawn cost, and movement of the pieces is in the pieces.json file.
 The current list of pieces are:
 - Spawner
 - Flier
@@ -30,16 +30,19 @@ The initial setup will look like this:
 <  x SP1 x  x  x  x  >
    v  v  v  v  v  v
 </pre>
+Player 1 will start with 4 mana.
+Player 2 will start with 5 mana.
 
 ## Move
 Each player will take turns doing an action.
 There are 2 actions available:
-1. Placing a piece on an empty tile adjacent (the 8 neighbouring tiles) to the Spawner piece.
+1. Placing a piece on an empty tile adjacent (the 8 neighbouring tiles) to the Spawner piece. This will reduce the mana by the cost of the piece.  
 2. Move a piece on the board to an empty tile according to their moveset from the pieces.json file. The board wraps itself on both columns and rows.  
 
 If the player jumps over an opponent's piece, the opponent's piece will be captured and removed from the board.
-The opponent can respawn this piece after 5 turns.
-However, if the player lands on a tile with an opponent's piece, the opponent's piece will NOT be captured and the move is invalid.
+The opponent can respawn this piece with a some cost of mana described in pieces.json.
+However, if the player lands on a tile with an opponent's piece, the opponent's piece will NOT be captured and the move is invalid.  
+After the turn ends, the player will get 1 mana replenished.
 
 ## Winning Condition
 A player instantly wins if they capture the opponent's spawner. 
@@ -55,7 +58,7 @@ Example move: "spawn FL north"
 Example of me playing with the bot can be seen on the file sample_game_with_user.txt.  
 
 ## Updates
-### Version 1.0
+### Version 0.1.0
 Create the base logic of the game. 
 Added simple agents (Random, CheckTrap, NegaMax). 
 Added Heuristic Template.
