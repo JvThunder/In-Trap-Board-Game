@@ -1,5 +1,5 @@
 from agents.heuristic_v1_agent import HeuristicAgent
-from InTrap_env import InTrap, simulate_game, evaluate
+from InTrap_env import InTrap
 
 env = InTrap()
 
