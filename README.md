@@ -19,8 +19,9 @@ The current list of pieces are:
 - Swinger
 - Left-Swinger
 - Right-Swinger  
-
+<pre>
 For each piece, the json dictionary contains information in the following format:
+
 {
         "name"        : The name of the piece,
         "display"     : The initial you need to write when using play_with_agent.py,
@@ -30,6 +31,7 @@ For each piece, the json dictionary contains information in the following format
                          [<SW>,<S>,<SE>]]
                          (For each value in <direction>, it will move the piece in that direction according to the value.)
 }
+</pre>
 
 ## Setup
 The initial setup will look like this:
